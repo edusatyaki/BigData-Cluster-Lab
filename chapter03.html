@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Data Ecosystem &amp; SQL · Big Data Cluster Lab</title>
+<link rel="stylesheet" href="lab.css">
+</head>
+<body data-chapter="ch03">
+<div id="app">
+  <header class="top">
+    <button class="menu" id="menu" type="button" aria-controls="outline" aria-expanded="false">☰ Outline</button>
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="3" width="8.5" height="5" rx="1.2" fill="#FDB022"/><rect x="13.5" y="3" width="8.5" height="5" rx="1.2" fill="#FDB022" opacity=".75"/><rect x="2" y="10" width="8.5" height="5" rx="1.2" fill="#FDB022" opacity=".75"/><rect x="13.5" y="10" width="8.5" height="5" rx="1.2" fill="#FDB022"/><rect x="7.75" y="17" width="8.5" height="5" rx="1.2" fill="#FDB022" opacity=".9"/><circle cx="5" cy="5.5" r=".9" fill="#001E2B"/><circle cx="16.5" cy="12.5" r=".9" fill="#001E2B"/></svg>
+      <span><b>Big Data Cluster Lab</b><small>Hadoop · Spark · Kafka · SQL practice in a live cluster shell</small></span>
+    </a>
+    <div class="prog" aria-live="polite"><span id="progText"></span><div class="bar"><i id="progBar"></i></div></div>
+    <button class="fsbtn" id="fs" type="button">⛶ Full screen</button>
+  </header>
+
+  <div class="frame">
+    <nav class="outline" id="outline" aria-label="Course outline"></nav>
+    <div class="work">
+      <main class="panes">
+        <section class="q" id="q" aria-live="polite"></section>
+        <section class="right">
+          <div class="shell" id="shell">
+            <div class="shbar"><span class="live"></span><span class="t">CLUSTER SHELL</span><span class="conn" id="conn"></span><button id="clr" type="button">Clear</button></div>
+            <div class="out" id="out"></div>
+            <div class="inrow"><span class="pr" id="prompt"></span><textarea id="cmd" rows="1" spellcheck="false" autocapitalize="off" autocomplete="off" aria-label="cluster shell input"></textarea></div>
+          </div>
+          <div class="data" id="data">
+            <div class="dhead"><b>Cluster</b><span class="crumbs" id="dcrumb"></span><span class="chips" id="dchips"></span><span class="sp"></span><button class="mini" id="dsBtn" type="button">{ } Dataset SQL</button><button class="mini" id="dtog" type="button">Hide</button></div>
+            <div class="dbody" id="dbody"></div>
+          </div>
+        </section>
+      </main>
+      <footer class="bot">
+        <button class="nav" id="prev" type="button">← Previous</button>
+        <span class="crumb" id="crumb"></span>
+        <span class="credit"><b>Innovation in Education</b><i>·</i>Satyaki Das</span>
+        <span class="hint">Enter runs · Shift+Enter new line · ↑↓ history</span>
+        <button class="nav" id="next" type="button">Next →</button>
+      </footer>
+    </div>
+  </div>
+  <div class="scrim" id="scrim"></div>
+</div>
+
+<script src="engine.js"></script>
+<script src="ch01.js"></script>
+<script src="ch02.js"></script>
+<script src="ch03.js"></script>
+<script src="lab.js"></script>
+</body>
+</html>
